@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            text-align: center;
+            background-color: aqua;
+            font-family: cursive;
+        }
+
+        div {
+            border-color: blue;
+            border-style: solid;
+            width: 500;
+            height: 380px;
+            margin: 20px 0px 0px 350px;
+            padding: 20px 0px 0px 15px;
+            font-family: cursive;
+        }
+
+        input {
+            width: 420;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="palindrome.js"></script>
+
+    <h1>Palindrome</h1>
+    <hr>
+    <div>
+        <label>Digite la palabra</label>
+        <br>
+        <input type="text" id="palabra">
+        <button type="submit" onclick="palindrome()">Validar</button>
+
+        <br>
+        <br>
+        </h4>Resultado:</h4>
+        <p id="respuesta" style="color:green"></p>
+        <h4>Casos de prueba:</h4>
+        <ul>
+            <li>eye  ==> Es palindrome</li>
+            <li>_eye  ==> No es palindrome</li>
+            <li>reco nocer  ==> Es palindrome</li>
+            <li>353  ==> Es palindrome</li>
+            <li>mouse ==> No es palindrome</li>
+
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>
