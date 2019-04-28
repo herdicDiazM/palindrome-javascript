@@ -19,9 +19,6 @@ function palindrome(str=document.getElementById("palabra").value) {
         x++;
     }
 
-    console.log('derecho: '+ arrayDerecho);
-    console.log('invertido: '+ arrayDerecho);
-
     for(z=0; z<arrayDerecho.length; z++){
         if(arrayDerecho[z].toLowerCase()!==arrayInvertido[z].toLowerCase()){
 
@@ -29,7 +26,7 @@ function palindrome(str=document.getElementById("palabra").value) {
             break;
         }
         if(i===str.length){
-            booln="Si es poalidrome";
+            booln="Si es palindrome";
         }
     }
     document.getElementById("respuesta").innerHTML=booln;
